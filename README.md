@@ -32,6 +32,13 @@ You can find here the necessary steps for customizing the plates and assembling 
 - Export meshes by right click on them and select **Export mesh...**
 
 [![Plate customization video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/plate_customization_banner.png)](https://www.youtube.com/watch?v=9Bi0MCfb9tI "Plate customization | 16Motion Video Series")
+## Plate assembly
+- After 3D priting, drill an M4 thread into the **bottom left** and **top right** holes
+- Insert an **M3 self locking nut** into the socket below one of the tension levers
+- Insert an **M3x16** screw through the tension lever and drive it until it barely touches the lever
+- Repeat the step above for the other lever
+
+[![Plate assembly video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/plate_assembly_banner.png)](https://www.youtube.com/watch?v=31CdhINwxhE "Plate assembly | 16Motion Video Series")
 # License
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
