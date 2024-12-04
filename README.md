@@ -1,6 +1,10 @@
 # 16Motion
 Configurable, 3D printable carriage for aluminium extrusions. A 16Motion carriage consists of four 3D printed plates put together around the extrusion and some **cheap**, **easily sourceable** hardwares including 684 bearings, M3 and M4 screws and nuts.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://raw.githubusercontent.com/mosomate/16motion/main/docs/cover.png)
+Each plate has 8 attachment points to mount tools and accessories to the carriage using M3 screws and nuts. These 8 points split up to 2 groups: 4 **plate attachment point**s (indicated by yellow arrows) and 4 **carriage attachment point**s (indicated by violet arrows).
+
+**Carriage attachment points** go through at least 2 plates, therefore they give additional stuctural rigidity to the carriage. If you use only **plate attachment points**, it is recommended to put an M3x16 screw into a few of the **carriage attachment points** as well.
+Horizontal distance between the points is fixed at 23 mm and the vertical can be calculated with this formula: *vertical_distance = (extrusion_width + 9 mm) / 2*
 # Disclaimer
 As steel bearings are rolling on aluminium, they might leave marks and/or wear out the extrusion over time. For **casual** usage it's not significant, but for **regular** usage you should consider using lubrication (ex. a thin layer of lithium grease should do the job).
 
@@ -11,7 +15,7 @@ If you can accept these conditions, then have fun building your carriages!
 For one of the four plates you need:
 - 3D printed plate **x1**
 - 3D printer bearing spacer **x4**
-- M4x(width of extrusion + 10 mm) screw **x2** *(ex. if the extrusion is 20 mm width, screw length will be 20 mm + 10 mm = 30 mm)*
+- M4x(width of extrusion + 10 mm) screw **x2** *(e.g. if the extrusion is 20 mm width, screw length will be 20 mm + 10 mm = 30 mm)*
 - M3x16 screw **x2**
 - M3 self-locking nut **x2**
 - 684 bearing **x4**
@@ -33,12 +37,29 @@ You can find here the necessary steps for customizing the plates and assembling 
 
 [![Plate customization video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/plate_customization_banner.png)](https://www.youtube.com/watch?v=9Bi0MCfb9tI "Plate customization | 16Motion Video Series")
 ## Plate assembly
-- After 3D priting, drill an M4 thread into the **bottom left** and **top right** holes
-- Insert an **M3 self locking nut** into the socket below one of the tension levers
-- Insert an **M3x16** screw through the tension lever and drive it until it barely touches the lever
+- After 3D printing, drill an M4 thread into the **bottom left** and **top right** holes
+- Insert an **M3 self locking nut** into the socket below one of the preload levers
+- Insert an **M3x16** screw through the preload lever and drive it until it barely touches the lever
 - Repeat the step above for the other lever
 
 [![Plate assembly video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/plate_assembly_banner.png)](https://www.youtube.com/watch?v=31CdhINwxhE "Plate assembly | 16Motion Video Series")
+# Carriage assembly
+After you got your four plates printed and assembled, proceed with assemling the carriage. Additinal materials:
+- 16 pcs of 3D printed spacers
+- 16 pcs of 684 bearings
+- 8 pcs of M4 screws with the length discussed in **BOM for one plate** section
+
+Assembly:
+- Put together the four plates. For this step it's nice to have long M3 screws or Allen wrenches poked through carriage attachment points
+- Screw in one M4 screw into the threaded hole of a plate until it reaches the other side of the plate
+- Put a spacer and a bearing in the route of the M4 screw
+- Drive the screw until it can hold the spacer and the bearing
+- Put an other pair of spacer and bearing in the route of the M4 screw and drive it all the way in
+- Tighten the M4 screw firmly
+- Repeat these steps for the remaining 7 positions around the carriage
+- Remove the things you used to hold the plates together
+
+[![Carriage assembly video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/carriage_assembly_banner.png)](https://www.youtube.com/watch?v=4gjbtIjSXgw "Carriage assembly | 16Motion Video Series")
 # License
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
