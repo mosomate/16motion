@@ -1,6 +1,6 @@
 # 16Motion
 Configurable, 3D printable carriage for aluminium extrusions. A 16Motion carriage consists of four 3D printed plates put together around the extrusion and some **cheap**, **easily sourceable** hardwares including 684 bearings, M3 and M4 screws and nuts.
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://raw.githubusercontent.com/mosomate/16motion/main/docs/cover.png)
+![16Motion main cover](https://raw.githubusercontent.com/mosomate/16motion/main/docs/cover.png)
 Each plate has 8 attachment points to mount tools and accessories to the carriage using M3 screws and nuts. These 8 points split up to 2 groups: 4 **plate attachment point**s (indicated by yellow arrows) and 4 **carriage attachment point**s (indicated by violet arrows).
 
 **Carriage attachment points** go through at least 2 plates, therefore they give additional stuctural rigidity to the carriage. If you use only **plate attachment points**, it is recommended to put an M3x16 screw into a few of the **carriage attachment points** as well.
@@ -43,7 +43,7 @@ You can find here the necessary steps for customizing the plates and assembling 
 - Repeat the step above for the other lever
 
 [![Plate assembly video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/plate_assembly_banner.png)](https://www.youtube.com/watch?v=31CdhINwxhE "Plate assembly | 16Motion Video Series")
-# Carriage assembly
+## Carriage assembly
 After you got your four plates printed and assembled, proceed with assemling the carriage. Additinal materials:
 - 16 pcs of 3D printed spacers
 - 16 pcs of 684 bearings
@@ -60,6 +60,25 @@ Assembly:
 - Remove the things you used to hold the plates together
 
 [![Carriage assembly video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/carriage_assembly_banner.png)](https://www.youtube.com/watch?v=4gjbtIjSXgw "Carriage assembly | 16Motion Video Series")
+## Preload settings
+Here comes the tricky part. One rule: *No play, no too much tension!* Try to pay attension for having roughly the same tension for one pair of preload levers as you can see here:
+
+![Preload comparison](https://raw.githubusercontent.com/mosomate/16motion/main/docs/preload_comparison.png)
+
+My best practice to set the correct amount preload:
+- Get a piece of the extrusion the carriage made was made for
+- Sand down the edges on one end of the extrusion
+- Slide the carriage onto the extrusion and place the extrusion on a flat surface vertically
+- Start tightening the screws of one pair of the preload levers in small increments
+- Check if you can feel any resistance when sliding off and on the carriage again
+- Stop tightening the screws if you can feel a slight resistance when sliding the carriage onto the extrusion
+- Repeat this process for the rest of the preload levers
+
+Important notes: 
+- The carriage should fall through the extrusion by it's own weight when stands vertically. If it's stuck, you applied too much preload
+- I hope the video describes the process well 
+
+[![Preload settings video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/preload_settings_banner.png)](https://www.youtube.com/watch?v=Ehi13x3uwbU "Preload settings | 16Motion Video Series")
 # License
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
