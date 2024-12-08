@@ -1,14 +1,14 @@
-# 16Motion
-Configurable, 3D printable carriage for aluminium extrusions. A 16Motion carriage consists of four 3D printed plates put together around the extrusion and some **cheap**, **easily sourceable** hardwares including 684 bearings, M3 and M4 screws and nuts.
+# What is a 16Motion carriage?
+Configurable, 3D printable carriage for small (up to 40 mm wide) aluminium extrusions. A 16Motion carriage consists of four 3D printed plates put together around the extrusion and some **cheap**, **easily sourceable** hardwares including 684 (4x9x4) bearings, M3 and M4 screws and nuts.
 ![16Motion main cover](https://raw.githubusercontent.com/mosomate/16motion/main/docs/cover.png)
-Each plate has 8 attachment points to mount tools and accessories to the carriage using M3 screws and nuts. These 8 points split up to 2 groups: 4 **plate attachment point**s (indicated by yellow arrows) and 4 **carriage attachment point**s (indicated by violet arrows).
+Each plate has eight attachment points to mount tools and accessories to the carriage using M3 screws and nuts. These eight points split up to two groups: four **plate attachment point**s (indicated by yellow arrows) and four **carriage attachment point**s (indicated by violet arrows).
 
-**Carriage attachment points** go through at least 2 plates, therefore they give additional stuctural rigidity to the carriage. If you use only **plate attachment points**, it is recommended to put an M3x16 screw into a few of the **carriage attachment points** as well.
+**Carriage attachment points** go through at least two plates, therefore they give additional stuctural rigidity to the carriage. If you use only **plate attachment points**, it is recommended to put an M3x16 screw into a few of the **carriage attachment points** as well.
 Horizontal distance between the points is fixed at 23 mm and the vertical can be calculated with this formula: *vertical_distance = (extrusion_width + 9 mm) / 2*
 # Disclaimer
-As steel bearings are rolling on aluminium, they might leave marks and/or wear out the extrusion over time. For **casual** usage it's not significant, but for **regular** usage you should consider using lubrication (ex. a thin layer of lithium grease should do the job).
+**I'm not a professional mechanical engineer and haven't tested this design in a professional manner. I don't take any responsibilities for injuries and/or any damage caused by this design. Print and use it at you own risk!**
 
-This design is sensitive for dirt building up on the extrusion. Wiping them clean before usage is recommended!
+As steel bearings are rolling on aluminium, they might leave marks and/or wear out the extrusion over time. For **casual** usage it's not significant, but for **regular** usage you should consider using lubrication (e.g. a thin layer of lithium grease should do the job).
 
 If you can accept these conditions, then have fun building your carriages!
 # BOM for one plate
@@ -19,15 +19,19 @@ For one of the four plates you need:
 - M3x16 screw **x2**
 - M3 self-locking nut **x2**
 - 684 bearing **x4**
-# Precompiled STLs
+# 3D printing tips
 I uploaded precompiled STLs to Thingiverse for **20 mm**, **25 mm** and **40 mm** wide extrusions. Check them out [HERE](https://www.thingiverse.com/thing:6853255). If you can't find the suitable sizes to satisfy your needs, then proceed with the customization.
+
+A few tips I picked up during development:
+- The recommended material is **PETG**
+- The plates require supports for printing, but only buildplate touching ones
 # Customization and assembly
 You can find here the necessary steps for customizing the plates and assembling the carriage. Each step has a video tutorial of it, click on the banner to watch them on YouTube!
 ## Plate customization
 - Open **FreeCAD** and open **Plate.FCStd**
 - If you see nothing but the model of a ring (spacer) you have to toggle the visibility of the plate. Right click on **Plate** object and select **Appearance...**. Then open the dropdown at **Document window** and select **Flat Lines** again
 - Right click on the **Plate** document and check **Skip recomputes**
-- Click on **Spreadsheet** and edit the **Ideal extrusion width** and **Actual extrusion width** parameters. **Ideal extrusion width** is the theoretical width of one side of the extrusion (e.g. 20 mm) and the **Actual extrusion width** is the masured size of it (e.g. 19.9 mm). For maximum accuracy I recommend using a caliper for measuring
+- Click on **Spreadsheet** and edit the **Ideal extrusion width** and **Actual extrusion width** parameters. **Ideal extrusion width** is the theoretical width of one side of the extrusion (e.g. 20 mm) and the **Actual extrusion width** is the measured size of it (e.g. 19.9 mm)
 - Right click on **Spreadsheet** and select **Recompute object**
 - Recompute all remaining objects as well (Plate, Spacer and Assets)
 - Select **Mesh** from the Workbench selector
@@ -56,17 +60,17 @@ Assembly:
 - Drive the screw until it can hold the spacer and the bearing
 - Put an other pair of spacer and bearing in the route of the M4 screw and drive it all the way in
 - Tighten the M4 screw firmly
-- Repeat these steps for the remaining 7 positions around the carriage
+- Repeat these steps for the remaining seven positions around the carriage
 - Remove the things you used to hold the plates together
 
 [![Carriage assembly video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/carriage_assembly_banner.png)](https://www.youtube.com/watch?v=4gjbtIjSXgw "Carriage assembly | 16Motion Video Series")
 ## Preload settings
-Here comes the tricky part. One rule: *No play, no too much tension!* Try to pay attension for having roughly the same tension for one pair of preload levers as you can see here:
+Here comes the tricky part. One rule: *No play, no too much tension!* Try to pay attention for having roughly the same tension for a pair of preload levers as you can see here:
 
 ![Preload comparison](https://raw.githubusercontent.com/mosomate/16motion/main/docs/preload_comparison.png)
 
-My best practice to set the correct amount preload:
-- Get a piece of the extrusion the carriage made was made for
+My best practice to set the correct amount of preload:
+- Get a piece of the extrusion the carriage was made for
 - Sand down the edges on one end of the extrusion
 - Slide the carriage onto the extrusion and place the extrusion on a flat surface vertically
 - Start tightening the screws of one pair of the preload levers in small increments
@@ -75,10 +79,11 @@ My best practice to set the correct amount preload:
 - Repeat this process for the rest of the preload levers
 
 Important notes: 
-- The carriage should fall through the extrusion by it's own weight when stands vertically. If it's stuck, you applied too much preload
+- The carriage should fall through the extrusion by it's own weight when stands vertically. If it's stuck, you applied too much preload!
+- It's completely normal if a few of the bearings are not rolling when the carriage is moving
 - I hope the video describes the process well 
 
-[![Preload settings video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/preload_settings_banner.png)](https://www.youtube.com/watch?v=Ehi13x3uwbU "Preload settings | 16Motion Video Series")
+[![Preload settings video](https://raw.githubusercontent.com/mosomate/16motion/main/docs/preload_settings_banner.png)](https://www.youtube.com/watch?v=hf6m5ihSEW8 "Preload settings | 16Motion Video Series")
 # License
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
