@@ -24,9 +24,10 @@ I uploaded precompiled STLs to Thingiverse for **20 mm**, **25 mm** and **40 mm*
 
 A few tips I picked up during development:
 - The recommended material is **PETG**
-- The plates require supports for printing, but only buildplate touching ones
+- The plates require only *touching buildplate* kind of supports
+- 1 mm wall thickness and 0.5 mm top and bottom thickness worked fine for me
 # Customization and assembly
-You can find here the necessary steps for customizing the plates and assembling the carriage. Each step has a video tutorial of it, click on the banner to watch them on YouTube!
+You can find here the necessary steps for customizing the plates and assembling the carriage. Each step has a video tutorial at the end of it, don't forget to watch them on YouTube!
 ## Plate customization
 - Open **FreeCAD** and open **Plate.FCStd**
 - If you see nothing but the model of a ring (spacer) you have to toggle the visibility of the plate. Right click on **Plate** object and select **Appearance...**. Then open the dropdown at **Document window** and select **Flat Lines** again
